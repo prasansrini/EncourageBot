@@ -21,7 +21,12 @@ async def on_message(message):
     return
   
   if message.content.startswith('hi'):
-    await message.channel.send('Hello!')
+    await message.channel.send('''
+Hello!
+I am a personal assistant of Mr. Prasanna.
+Please follow the below link for his profile.
+https://www.linkedin.com/in/prasanna-srinivasan2905/
+    ''')
 
   if message.content.startswith('[inspiration]'):
     await message.channel.send(get_quotes())
